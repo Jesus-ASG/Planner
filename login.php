@@ -1,9 +1,4 @@
-<?php
-session_start();
-if (!isset($_SESSION['user_name'])) {	// Si no está logueado lo manda a loguear
-    header('location: login.php');
-}
-?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,8 +10,9 @@ if (!isset($_SESSION['user_name'])) {	// Si no está logueado lo manda a loguear
 	
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-icons.css">
 
-	<!-- Fuentes e íconos-->
+	<!-- Fuentes -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -32,9 +28,10 @@ if (!isset($_SESSION['user_name'])) {	// Si no está logueado lo manda a loguear
 		include("estructura/nav.php");
 	?>
 
-	<!-- INDEX LOGIN -->
+	<!-- LOGIN Y REGISTRO-->
 	<?php
-		include ("estructura/entrada.php");
+		include("estructura/login.php");
+		include("estructura/registro.php");
 	?>
 
 	<br>
