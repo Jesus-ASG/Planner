@@ -1,0 +1,52 @@
+
+body{
+	text-align: center;
+}
+.imagen-fondo{
+	filter: blur(4px);
+
+}
+
+.agrupar{
+	width: 660px;
+	margin: 20px auto;
+	text-align: center;
+	border: 5px solid black;
+}
+
+.seccion{
+	width: 600px;
+	margin: 30px;
+}
+
+
+article{
+	background: #000000;
+	border: 3px solid black;
+	padding: 15px;
+}
+
+h1 , h2{
+	text-transform: uppercase;
+	font-size: 1em;
+	font-style: italic;
+	color: white;
+}
+
+div{
+	color: white;
+}
+
+.social-media-button{
+	border-radius: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.social-media-button:hover {
+	background-color: #000;
+	color: #fff;
+}
+.social-media-button:active{
+	background-color: #000;
+	color: #fff;
+}

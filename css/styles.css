@@ -1,0 +1,99 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	margin: 0;
+}
+
+.logo-nav-bar{
+	width: 50px;
+	margin: 5px;
+	padding: 5px;
+}
+
+.imagen-fondo{
+	filter: blur(4px);
+}
+
+.principal{
+	background-color: #FFF;
+	border-radius: 10px;
+	border: 1px solid #CCC;
+	box-shadow: 5px 5px 8px #CCC;
+	display: block;
+	margin: 10px auto;
+	padding: 8px;
+	text-align: center;
+}
+
+.access-container{
+	display: block;
+	width: 400px;
+	text-align: center;
+	margin: auto;
+	margin-top: 30px;
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+.access-container a{
+	text-decoration: none;
+}
+
+.modal-background{
+	position: fixed;
+	z-index: 1000;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: grid;
+	place-items: center;
+}
+
+.modal-g{
+	margin-bottom: 100px;
+}
+
+.modal-container{
+	display: block;
+	width: 400px;
+	text-align: center;
+	margin: auto;
+	
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 5px 5px 8px #CCC;
+}
+
+.close{
+	color: #fff;
+	display: block;
+	cursor: pointer;
+	font-size: 25px;
+	text-align: right;
+	margin-right: -40px;
+	margin-bottom: -10px;
+}
+
+
+
+.social-media-button{
+	border-radius: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.social-media-button:hover {
+	background-color: #000;
+	color: #fff;
+}
+.social-media-button:active{
+	background-color: #000;
+	color: #fff;
+}
