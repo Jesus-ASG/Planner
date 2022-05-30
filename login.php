@@ -1,4 +1,9 @@
-
+<?php
+session_start();
+if (isset($_SESSION['user_name'])) {	// Si está logueado lo manda al index
+    header('location: index.php');
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>

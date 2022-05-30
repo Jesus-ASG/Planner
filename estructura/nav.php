@@ -1,6 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   	<div class="container-fluid">
-    	<img src="img/pencil.png" class="logo-nav-bar">
+  		<a href="index.php">
+    		<img src="img/pencil.png" class="logo-nav-bar">
+    	</a>
 
     	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse2">
      		<span class="navbar-toggler-icon"></span>
