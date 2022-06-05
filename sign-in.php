@@ -61,7 +61,7 @@ if (isset($_SESSION['user_name'])) {	// Si está logueado lo manda al index
 	<script type="text/javascript" src="bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.js"></script>
 
 	<!-- scripts -->
-	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/script-login.js"></script>
 
 </body>
 </html>

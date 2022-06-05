@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['user_name'])) {	// Si no está logueado lo manda a loguear
-    header('location: login.php');
+    header('location: sign-in.php');
 }
 ?>
 <!DOCTYPE html>
@@ -34,7 +34,7 @@ if (!isset($_SESSION['user_name'])) {	// Si no está logueado lo manda a loguear
 
 	<!-- INDEX LOGIN -->
 	<?php
-		include ("estructura/entrada.php");
+		include ("estructura/contenido.php");
 	?>
 
 	<br>
@@ -59,7 +59,7 @@ if (!isset($_SESSION['user_name'])) {	// Si no está logueado lo manda a loguear
 	<script type="text/javascript" src="bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.js"></script>
 
 	<!-- scripts -->
-	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/script-index.js"></script>
 
 </body>
 </html>
