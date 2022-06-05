@@ -19,6 +19,7 @@ h1, h2, h3, h4, h5 {
 	filter: blur(4px);
 }
 
+/* Sign up */
 .access-container{
 	display: block;
 	width: 400px;
@@ -69,8 +70,6 @@ h1, h2, h3, h4, h5 {
 	margin-bottom: -10px;
 }
 
-
-
 .social-media-button{
 	border-radius: 100%;
 	background-color: rgba(0, 0, 0, 0.2);
@@ -84,8 +83,9 @@ h1, h2, h3, h4, h5 {
 	background-color: #000;
 	color: #fff;
 }
+/* Fin del contenido de sign up */
 
-
+/* Index */
 .principal{
 	background-color: #FFF;
 	border-radius: 10px;
@@ -112,5 +112,23 @@ h1, h2, h3, h4, h5 {
 
 .nueva_nota{
 	background-color: #FFF14F;
+	border-radius: 10px;
+	display: grid;
+	place-items: center;
 }
 
+.nueva_nota textarea {
+	margin: 10px;
+	width: 90%;
+	border: none;
+	border-radius: 10px;
+	padding: 5px;
+	background-color: #FFF14F;
+	outline: none;
+	resize: none;
+	max-height: 300px;
+}
+
+.nueva_nota textarea::-webkit-scrollbar{
+  width: 0px;
+}
