@@ -48,7 +48,7 @@ const ol_cal = document.querySelector("#ol_cal");
 const titulo_mes = document.querySelector("#mes");
 
 // Obtener fecha actual
-const current_date = new Date();
+var current_date = new Date();
 var weekday = current_date.getDay();
 var day = current_date.getDate();
 var month = current_date.getMonth();
@@ -64,32 +64,35 @@ var last_max_day = new Date(year, month, 0);
 var last_max_days = last_max_day.getDate();
 
 ponerMes(month);
-for (var i = day; i >= -first_weekday+1; i--) {
-	const li = document.createElement("li");
-	if (i<=0){
-		li.textContent = last_max_days+i;
-		li.className = "mes_externo";
+rellenarDias();
+
+function rellenarDias(){
+	for (var i = day; i >= -first_weekday+1; i--) {
+		const li = document.createElement("li");
+		if (i<=0){
+			li.textContent = last_max_days+i;
+			li.className = "mes_externo";
+		}
+		else{
+			li.textContent = i;
+			if (i==day)
+				li.className = "today";
+		}
+		ol_cal.prepend(li);
 	}
-	else{
-		li.textContent = i;
-		if (i==day)
-			li.className = "today";
+	for (var i = day+1; i<42-first_weekday+1; i++){
+		const li = document.createElement("li");
+		if (i<=max_days){
+			li.textContent = i;
+		}else{
+			li.textContent = i - max_days;
+			li.className = "mes_externo";
+		}
+		ol_cal.appendChild(li);
 	}
-	
-	ol_cal.prepend(li);
+	div_calendario.appendChild(ol_cal);
 }
 
-for (var i = day+1; i<42-first_weekday+1; i++){
-	const li = document.createElement("li");
-	if (i<=max_days){
-		li.textContent = i;
-	}else{
-		li.textContent = i - max_days;
-		li.className = "mes_externo";
-	}
-	ol_cal.appendChild(li);
-}
-div_calendario.appendChild(ol_cal);
 
 function ponerMes(mes){
 	switch(mes){
@@ -118,4 +121,22 @@ function ponerMes(mes){
 		case 11:titulo_mes.innerHTML = "Diciembre";
 		break;
 	}
+}
+
+function cargarMesAnterior(){
+	month--;
+	if (month<0){
+		month = 11;
+		year--;
+	}
+	var aux_date = new Date(year, month, 1);
+	var aux_fwd = aux_date.getDay(); //obtiene primer día de la semana
+	var aux_max_days = new Date(year, month+1, 0).getDate();
+
+	console.log(aux_max_days);
+
+}
+
+function cargarMesSiguiente(){
+	console.log("siguiente");
 }

@@ -20,13 +20,13 @@
 					<div class="calendario" id="calendario">
 						<div class="mes_titulo">
 							<div>
-								<button>Ant</button>
+								<button onclick="cargarMesAnterior();">Ant</button>
 							</div>
 							<div>
 								<h3 id="mes">Mes</h3>
 							</div>
 							<div>
-								<button>Sig</button>
+								<button onclick="cargarMesSiguiente();">Sig</button>
 							</div>
 								
 							
