@@ -48,44 +48,48 @@ const ol_cal = document.querySelector("#ol_cal");
 const titulo_mes = document.querySelector("#mes");
 
 // Obtener fecha actual
-var current_date = new Date();
-var weekday = current_date.getDay();
-var day = current_date.getDate();
-var month = current_date.getMonth();
-var year = current_date.getFullYear();
-// Obtener primer día de la semana
-var first_weekday = new Date(year, month, 1).getDay();
+const c_date = new Date();
+const c_weekday = c_date.getDay();
+const c_day = c_date.getDate();
+const c_month = c_date.getMonth();
+const c_year = c_date.getFullYear();
 
-// Obtener último día del mes actual
-var max_days = new Date(year, month+1, 0).getDate();
+var date = c_date;///////
+var weekday = c_weekday;
+var day = c_day;
+var month = c_month;
+var year = c_year;
 
-// Obtener último día del mes anterior
-var last_max_day = new Date(year, month, 0);
-var last_max_days = last_max_day.getDate();
+var fwd = new Date(year, month, 1).getDay(); //primer día de la semana
 
-ponerMes(month);
+var md_ant = new Date(year, month, 0).getDate(); //último día del mes anterior
+var md_sig = new Date(year, month+1, 0).getDate(); //último día del mes actual
+
+
+addMonthYear(month);
 rellenarDias();
 
+
 function rellenarDias(){
-	for (var i = day; i >= -first_weekday+1; i--) {
+	for (var i = day; i >= -fwd+1; i--) {
 		const li = document.createElement("li");
 		if (i<=0){
-			li.textContent = last_max_days+i;
+			li.textContent = md_ant+i;
 			li.className = "mes_externo";
 		}
 		else{
 			li.textContent = i;
-			if (i==day)
+			if (i == day && day == c_day && month == c_month && year == c_year)
 				li.className = "today";
 		}
 		ol_cal.prepend(li);
 	}
-	for (var i = day+1; i<42-first_weekday+1; i++){
+	for (var i = day+1; i<42-fwd+1; i++){
 		const li = document.createElement("li");
-		if (i<=max_days){
+		if (i<=md_sig){
 			li.textContent = i;
 		}else{
-			li.textContent = i - max_days;
+			li.textContent = i - md_sig;
 			li.className = "mes_externo";
 		}
 		ol_cal.appendChild(li);
@@ -93,8 +97,37 @@ function rellenarDias(){
 	div_calendario.appendChild(ol_cal);
 }
 
+function actualizar(){
+	date = new Date(year, month, 1);
+	fwd = date.getDay(); //obtiene primer día de la semana
+	md_ant = new Date(year, month, 0).getDate(); //último día del mes anterior
+	md_sig = new Date(year, month+1, 0).getDate(); //último día del mes actual
+	
+	addMonthYear(month);
+	rellenarDias();
+}
 
-function ponerMes(mes){
+function cargarMesAnterior(){
+	ol_cal.innerHTML = "";
+	month--;
+	if (month<0){
+		month = 11;
+		year--;
+	}
+	actualizar();
+}
+
+function cargarMesSiguiente(){
+	ol_cal.innerHTML = "";
+	month++;
+	if (month>11){
+		month = 0;
+		year++;
+	}
+	actualizar();
+}
+
+function addMonthYear(mes){
 	switch(mes){
 		case 0:titulo_mes.innerHTML = "Enero";
 		break;
@@ -121,22 +154,5 @@ function ponerMes(mes){
 		case 11:titulo_mes.innerHTML = "Diciembre";
 		break;
 	}
-}
-
-function cargarMesAnterior(){
-	month--;
-	if (month<0){
-		month = 11;
-		year--;
-	}
-	var aux_date = new Date(year, month, 1);
-	var aux_fwd = aux_date.getDay(); //obtiene primer día de la semana
-	var aux_max_days = new Date(year, month+1, 0).getDate();
-
-	console.log(aux_max_days);
-
-}
-
-function cargarMesSiguiente(){
-	console.log("siguiente");
+	titulo_mes.innerHTML = titulo_mes.innerHTML + " " + year;
 }
