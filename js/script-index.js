@@ -163,12 +163,12 @@ var show_calendar = true;
 function show_hide_calendar(){
 	if (show_calendar){
 		div_calendario.style.display = 'none';
-		icon_eye.className = "fa-2x icon-eye-close";
+		icon_eye.className = "fa-2x fa fa-eye-slash";
 		show_calendar = false;
 	}
 	else{
 		div_calendario.style.display = 'block';
-		icon_eye.className = "fa-2x icon-eye-open";
+		icon_eye.className = "fa-2x fa fa-eye";
 		show_calendar = true;
 	}
 }

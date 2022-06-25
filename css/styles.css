@@ -170,17 +170,20 @@ h1, h2, h3, h4, h5 {
 	color: #c0c0c0;
 }
 
+.day{
+	width: 25px;
+}
+
 .today {
 	border-radius: 100%;
 	background-color: #FF5B4F;
 }
 
 .show_calendar {
-	text-align: left;
-	border: 1px solid #FF5B4F;
+	text-align: center;
+	border: 2px solid #FF5B4F;
 	border-radius: 10px;
 	margin-bottom: 5px;
-
 }
 .show_calendar button{
 	border-style: none;

@@ -22,9 +22,6 @@ if (!isset($_SESSION['user_name'])) {	// Si no está logueado lo manda a loguear
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-
 	<!-- Estilos -->
 	<link rel="stylesheet" href="css/styles.css">
 

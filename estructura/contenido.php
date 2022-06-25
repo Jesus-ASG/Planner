@@ -18,7 +18,7 @@
 				<div class="mx-3 mt-2 left">
 					<div class="show_calendar p-1">
 						<button onclick="show_hide_calendar();">
-							<i class="fa-2x icon-eye-open" id="icon_eye">Calendario</i>
+							<i class="fa fa-eye" id="icon_eye" style="font-size:24px"><span class="px-2" >Calendario</span></i>
 						</button>
 					</div>
 					
