@@ -15,7 +15,12 @@
 
 			<div class="col-6">
 				<h2>Agenda</h2>
-				<div class="mx-3 mt-2" id="agregar_nota">
+				<div class="mx-3 mt-2 left">
+					<div class="show_calendar p-1">
+						<button onclick="show_hide_calendar();">
+							<i class="fa fa-eye" id="icon_eye" style="font-size:24px"><span class="px-2" >Calendario</span></i>
+						</button>
+					</div>
 					
 					<div class="calendario" id="calendario">
 						<div class="mes_titulo">
@@ -28,11 +33,7 @@
 							<div>
 								<button onclick="cargarMesSiguiente();">Sig</button>
 							</div>
-								
-							
-							
 						</div>
-						
 						<hr>
 						<ol>
 							<li>D</li>

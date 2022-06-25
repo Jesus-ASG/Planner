@@ -46,6 +46,7 @@ function agregarf(id_nota){
 const div_calendario = document.querySelector("#calendario");
 const ol_cal = document.querySelector("#ol_cal");
 const titulo_mes = document.querySelector("#mes");
+const icon_eye = document.querySelector("#icon_eye");
 
 // Obtener fecha actual
 const c_date = new Date();
@@ -54,7 +55,7 @@ const c_day = c_date.getDate();
 const c_month = c_date.getMonth();
 const c_year = c_date.getFullYear();
 
-var date = c_date;///////
+var date = c_date;
 var weekday = c_weekday;
 var day = c_day;
 var month = c_month;
@@ -155,4 +156,19 @@ function addMonthYear(mes){
 		break;
 	}
 	titulo_mes.innerHTML = titulo_mes.innerHTML + " " + year;
+}
+
+// Mostrar/ocultar calendario
+var show_calendar = true;
+function show_hide_calendar(){
+	if (show_calendar){
+		div_calendario.style.display = 'none';
+		icon_eye.className = "fa-2x fa fa-eye-slash";
+		show_calendar = false;
+	}
+	else{
+		div_calendario.style.display = 'block';
+		icon_eye.className = "fa-2x fa fa-eye";
+		show_calendar = true;
+	}
 }

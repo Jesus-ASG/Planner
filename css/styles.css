@@ -120,8 +120,7 @@ h1, h2, h3, h4, h5 {
 .nueva_nota textarea {
 	margin: 10px;
 	width: 90%;
-	border: none;
-	border-radius: 10px;
+	border-color: #FFF14F;
 	padding: 5px;
 	background-color: #FFF14F;
 	outline: none;
@@ -145,6 +144,11 @@ h1, h2, h3, h4, h5 {
 	grid-template-columns: repeat(7, 1fr);
 	padding: 0;
 }
+.calendario hr{
+	border: 1px solid #28AEFF;
+	margin: 10px;
+	background-color: #28AEFF;
+}
 
 .mes_titulo{
 	display: grid;
@@ -166,7 +170,24 @@ h1, h2, h3, h4, h5 {
 	color: #c0c0c0;
 }
 
+.day{
+	width: 25px;
+}
+
 .today {
 	border-radius: 100%;
 	background-color: #FF5B4F;
+}
+
+.show_calendar {
+	text-align: center;
+	border: 2px solid #FF5B4F;
+	border-radius: 10px;
+	margin-bottom: 5px;
+}
+.show_calendar button{
+	border-style: none;
+	background-color: #fff;
+	padding-left: 5px;
+	padding-right: 5px;
 }
