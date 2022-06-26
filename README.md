@@ -13,14 +13,20 @@ Una aplicación web que permite ordenar citas en una agenda.
 ![image](https://user-images.githubusercontent.com/106128245/170935765-5a8d9efe-5e6d-4f08-ae64-0bc4bdc82ff8.png)
 
 ## Pantalla principal
-![image](https://user-images.githubusercontent.com/106128245/175786023-a802b3f0-f62a-456a-9cbe-9d1bf70a14d4.png)
+![image](https://user-images.githubusercontent.com/106128245/175787504-c55395c7-e7e0-499f-a592-a247ff42e477.png)
+
 
 ## Función para agregar notas
-![image](https://user-images.githubusercontent.com/106128245/175786087-adbd328b-7824-4132-956f-b9261c0923bc.png)
+![image](https://user-images.githubusercontent.com/106128245/175787543-6e8cf447-d153-4c8d-9429-1a60583d580f.png)
+
 
 ## Se puede cambiar el mes del calendario con anterior o siguiente
-![image](https://user-images.githubusercontent.com/106128245/175786124-ceaf66ab-791d-47d2-93c6-e5c59674fe0e.png)
-![image](https://user-images.githubusercontent.com/106128245/175786135-059ca6bf-d624-4aaa-893a-bac87cbe4998.png)
+![image](https://user-images.githubusercontent.com/106128245/175787560-82a7726f-349d-4370-a31a-85f029c03653.png)
+![image](https://user-images.githubusercontent.com/106128245/175787571-d92a0a95-a0a9-4b36-8a96-617ceac82805.png)
+
+
+## Es posible ocultar el calendario
+![image](https://user-images.githubusercontent.com/106128245/175787592-76044729-fe9a-44b9-be24-9ff7e8e155d2.png)
 
 
 
