@@ -3,7 +3,7 @@
 		<h1>¡Te damos la bienvenida!</h1>
 		<hr>
 		<div class="row">
-			<div class="col-6">
+			<div class="col-6 col-6 d-none d-sm-block d-sm-none d-md-block">
 				<h2>Notas</h2>
 				<div class="agregar_nota mx-3 mt-2" id="agregar_nota">
 					+ Agregar nota
@@ -13,7 +13,7 @@
 				</div>
 			</div>
 
-			<div class="col-6">
+			<div class="col-6 col-sm col-12 ">
 				<h2>Agenda</h2>
 				<div class="mx-3 mt-2 left">
 					<div class="show_calendar p-1">
@@ -45,12 +45,11 @@
 							<li>S</li>
 						</ol>
 						<ol id="ol_cal">
-							
-							
 						</ol>
 					</div>
-
 				</div>
+				<hr>
+				<div></div>
 			</div>
 		</div>
 		

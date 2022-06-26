@@ -24,6 +24,7 @@ if (!isset($_SESSION['user_name'])) {	// Si no está logueado lo manda a loguear
 
 	<!-- Estilos -->
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/calendario.css">
 
 </head>
 <body background="img/fondo.jpg" id="imagen-fondo">
@@ -60,6 +61,7 @@ if (!isset($_SESSION['user_name'])) {	// Si no está logueado lo manda a loguear
 
 	<!-- scripts -->
 	<script type="text/javascript" src="js/script-index.js"></script>
+	<script type="text/javascript" src="js/agenda-calendario.js"></script>
 
 </body>
 </html>
