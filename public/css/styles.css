@@ -19,6 +19,14 @@ p {
 	padding: 5px;
 }
 
+
+.footer-position{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
 .imagen-fondo{
 	filter: blur(4px);
 }
