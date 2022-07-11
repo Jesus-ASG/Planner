@@ -22,15 +22,13 @@ app.get('/login', (request, response) => {
     console.log('hi from get method');
 });
 app.post('/login', (request, response) => {
-    console.log('receiving data with POST');
-    const { username, password } = request.body;
-    console.log('username: '+username+'\npassword: '+password);
-    //const db = dbService.getDbServiceInstance();
+    const { username, password } = request.body; // recieve what data index.js sent [1]->[2]
+    const db = dbService.getDbServiceInstance(); // get reference from database
+    const result = db.verifyLogin(username, password);  // call function in database, result is the output
 
-    //const result = db.verifyLogin(username, password);
-
-
-    
+    result
+    .then(data=> response.json({data : data}))  // send database output to index.js [3]
+    .catch(err => console.log(err));    // catch an error if it exists
 });
 
 

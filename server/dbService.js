@@ -38,6 +38,23 @@ class DbService{
             console.log(error);
         }
     }
+
+    async verifyLogin(username, password){
+        try{
+            const response = await new Promise((resolve, reject) => {
+                const query = "SELECT * FROM users WHERE name = ? AND password = ?;";
+                connection.query(query, [username, password], (error, results) => {
+                    if (error)
+                        reject (new Error(err.message));
+                    resolve(results);
+                });
+            });
+            return response;
+            console.log(response);
+        }catch(error){
+            console.log(error);
+        }
+    }
     
 }
 
