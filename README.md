@@ -1,3 +1,5 @@
+# ¡Importante! puedes ver una versión fullstack con nodejs, expressjs cambiando a la rama "fullstack"
+#
 # Agenda
 Una aplicación web que permite ordenar citas en una agenda.
 
