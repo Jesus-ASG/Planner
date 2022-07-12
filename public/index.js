@@ -19,17 +19,25 @@ form_login.addEventListener("submit", (e) => {
 
 function loadUserData(data){    // [4]
     if (data.length === 0){
-        console.log('no data');
         const form_message = document.getElementById('form_message');
         form_message.className = 'alert alert-warning';
         form_message.innerHTML = 'Los datos no coinciden';
     }
     else{
+        // remove all unnecessary elements
+        const btn_contact = document.getElementById('btn_contact');
         const btn_view_profile = document.getElementById('btn_view_profile');
         const btn_sign_out = document.getElementById('btn_sign_out');
+        const access_container = document.getElementById('access_container');
         
+        btn_contact.style.display = 'none';
         btn_view_profile.hidden = false;
         btn_sign_out.hidden = false;
+        access_container.style.display = 'none';
+
+        // place neccessary elements
+        const main_container = document.getElementById('main_container');
+        main_container.hidden = false;
         
         
     }
