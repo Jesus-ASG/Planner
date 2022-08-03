@@ -1,8 +1,17 @@
 # Planner
 Web application in mode fullstack with nodejs, express js and other modules
 
+## Instalation
+* Install Visual Studio Code
+* Install liveserver extension for Visual Studio Code and open html page with it
+* Install Node (this version is 16.15.1)
+* Install database in your prefered server and config .env file
+* Open a terminal, switch to server folder and then type "node install"
+* Type in terminal "npm start" to start project
+
+
 ## Screenshots
-### Principal page
+### Homepage
 <img src="https://user-images.githubusercontent.com/106128245/178394514-ef1e0fd9-7ee6-446f-864b-c81f02d9e85c.png" width="800px">
 
 ### Run expressjs server
