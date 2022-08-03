@@ -1,0 +1,17 @@
+---- Symbology ----
+🟢 Making
+🔵 For later
+⚫ For much more later
+-------------------
+
+
+🟢 Display data to the user when he logs in
+
+🔵 Make sessions for not need to log in everytime
+
+🔵 Make when it clicks on app title in navbar - send a post with / for reaload the main index ***
+
+⚫ Move all with templates using React
+
+
+

@@ -5,6 +5,12 @@
 	font-family: 'Roboto', sans-serif;
 }
 
+body{
+	position: relative;
+	min-height: 100vh;
+	padding-bottom: 200px;
+}
+
 h1, h2, h3, h4, h5 {
 	margin: 0;
 }
@@ -17,6 +23,14 @@ p {
 	width: 50px;
 	margin: 5px;
 	padding: 5px;
+}
+
+
+.footer-position{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
 }
 
 .imagen-fondo{

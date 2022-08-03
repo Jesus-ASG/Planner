@@ -1,37 +1,36 @@
-# ¡Importante! puedes ver una versión fullstack con nodejs, expressjs cambiando a la rama "fullstack"
-#
-# Agenda
-Una aplicación web que permite ordenar citas en una agenda.
+# Planner
+Web application in mode fullstack with nodejs, express js and other modules
 
-# Instalación
-...
-
-# Uso
-## Pantalla inicial
-![image](https://user-images.githubusercontent.com/106128245/170935254-b0180bf9-832d-49cc-94e5-29f2b96bb19c.png)
-## Pantalla de registro
-![image](https://user-images.githubusercontent.com/106128245/170935404-a3daf156-0a15-4fa2-9887-1e40eba9bcfb.png)
-![image](https://user-images.githubusercontent.com/106128245/170935711-2bc61fd5-207d-4ac4-8a40-c4efc1e514cf.png)
-![image](https://user-images.githubusercontent.com/106128245/170935765-5a8d9efe-5e6d-4f08-ae64-0bc4bdc82ff8.png)
-
-## Pantalla principal
-![image](https://user-images.githubusercontent.com/106128245/175787504-c55395c7-e7e0-499f-a592-a247ff42e477.png)
+## Instalation
+* Install Visual Studio Code
+* Install liveserver extension for Visual Studio Code and open html page with it
+* Install Node (this version is 16.15.1)
+* Install database in your prefered server and config .env file
+* Open a terminal, switch to server folder and then type "node install"
+* Type in terminal "npm start" to start project
 
 
-## Función para agregar notas
-![image](https://user-images.githubusercontent.com/106128245/175787543-6e8cf447-d153-4c8d-9429-1a60583d580f.png)
+## Screenshots
+### Homepage
+<img src="https://user-images.githubusercontent.com/106128245/178394514-ef1e0fd9-7ee6-446f-864b-c81f02d9e85c.png" width="800px">
 
+### Run expressjs server
+<img src="https://user-images.githubusercontent.com/106128245/178394872-0724feb1-2a3c-4691-91f0-f35c943ccc11.png" width="800px">
 
-## Se puede cambiar el mes del calendario con anterior o siguiente
-![image](https://user-images.githubusercontent.com/106128245/175787560-82a7726f-349d-4370-a31a-85f029c03653.png)
-![image](https://user-images.githubusercontent.com/106128245/175787571-d92a0a95-a0a9-4b36-8a96-617ceac82805.png)
+### Public and server are separated for security
+<img src="https://user-images.githubusercontent.com/106128245/178395198-02a1af51-0f6e-47ff-b52b-1e5f5885ed30.png" width="500px">
 
+### Login
+<img src="https://user-images.githubusercontent.com/106128245/178395347-239e9c04-eb61-412b-8e0e-4a036bf17d5f.png" width="800px">
 
-## Es posible ocultar el calendario
-![image](https://user-images.githubusercontent.com/106128245/175787592-76044729-fe9a-44b9-be24-9ff7e8e155d2.png)
+### File 'index.js' (Client side) send data to another server
+<img src="https://user-images.githubusercontent.com/106128245/178395591-8acc77be-eeb5-4aa6-9e04-b9e7574bd17d.png" width="700px">
 
+### File 'app.js' (Server side) receives data and do things like ask a database if user and password are correct, then give information to 'index.js' and this uses it
+<img src="https://user-images.githubusercontent.com/106128245/178396020-1e0248ff-1579-485f-b122-f9486d66abf9.png" width="700px">
 
+### Login successfully
+<img src="https://user-images.githubusercontent.com/106128245/178396677-05b04a46-f226-45a0-befa-372a9f3786e9.png" width="800px">
 
-## Diseño responsivo
-Cuenta con diseño responsivo
-
+## Login failed
+<img src="https://user-images.githubusercontent.com/106128245/178396857-c2f00f18-05a6-4794-b452-e135f1cbff52.png" width="800px">
