@@ -1,0 +1,15 @@
+###
+
+token secrets were generated typing in a console:
+node
+require('crypto').randomBytes(64).toString('hex')
+
+###
+
+active word wrap with alt+z
+
+###
+format document
+shift+alt+f 
+
+###

@@ -7,7 +7,7 @@
 
 🟢 Display data to the user when he logs in
 
-🔵 Make sessions for not need to log in everytime
+🟢 Make sessions for not need to log in everytime (JWT)
 
 🔵 Make when it clicks on app title in navbar - send a post with / for reaload the main index ***
 
